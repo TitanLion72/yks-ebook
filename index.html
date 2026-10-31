@@ -1,6 +1,8 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YKS E-Kitap — TYT/AYT konu notları</title><link rel="stylesheet" href="./assets/style.css"></head><body data-base="./"><header class="top"><a class="brand" href="./">YKS E-Kitap</a><button class="btn" id="theme" aria-label="Tema değiştir">Açık / Koyu</button></header><div class="wrap">
-<h1>YKS E-Kitap</h1><p class="small">TYT/AYT konu notları · pilot: TYT Matematik › Problemler › İşçi problemleri</p>
-<input type="search" id="q" placeholder="Konu ara (ör. işçi, havuz)" aria-label="Konu ara">
-<div class="grid2"><div id="courses"></div><aside><section class="card"><h2>Yakında</h2><ul id="soon" class="ui small"></ul></section>
-<section class="card amber"><h2>Nasıl çalışır?</h2><p class="small">Notların ve ilerlemen yalnızca bu tarayıcıda (localStorage) saklanır. Konu sayfasındaki Dışa aktar / İçe aktar ile taşıyabilirsin.</p></section></aside></div>
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#1d4b8f"><title>YKS E-Kitap · YKS E-Kitap</title><script>try{var t=localStorage.getItem("yks-ebook:theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script><link rel="stylesheet" href="./assets/style.css"></head><body data-base="./"><header class="top"><a class="brand" href="./"><i></i>YKS E-Kitap <small>TYT · AYT konu notları</small></a><span class="sp"></span><button class="btn ghost" id="theme" aria-label="Açık/koyu tema">Tema</button></header><div class="wrap">
+<section class="hero"><div class="kicker">TYT · AYT konu notları</div><h1>YKS E-Kitap</h1><p>Kısa, düzenli konu anlatımları; şema, sunum ve çözümlü sorularla. Pilot konu: TYT Matematik › Problemler › İşçi problemleri.</p>
+<div class="stats"><div class="stat"><b id="stTopics">–</b>hazır konu</div><div class="stat"><b id="stDone">–</b>tamamlanan</div><div class="stat"><b id="stRead">–</b>okunan</div></div>
+<input type="search" id="q" placeholder="Konu ara: işçi, havuz, ters orantı…" aria-label="Konu ara"></section>
+<div class="grid2"><div id="courses"></div><aside>
+<section class="card amber"><h2>Nasıl çalışır?</h2><p class="small">Her konu: hedefler, anlatım, şema, sunum, müfredat dışı kutu, örnek sorular ve kendi defterin. Notların ve ilerlemen yalnızca bu tarayıcıda saklanır; konu sayfasından JSON olarak dışa/içe aktarabilirsin.</p></section>
+<section class="card"><h2>Yakında</h2><ul id="soon" class="ui small"></ul></section></aside></div>
 </div><script src="./assets/app.js"></script></body></html>
