@@ -98,3 +98,56 @@ textarea:focus{outline:2px solid color-mix(in oklab,var(--blue) 45%,transparent)
 .hidden{display:none}
 @media (max-width:880px){.layout,.grid2{grid-template-columns:minmax(0,1fr)}.toc{position:sticky;top:57px;z-index:5;flex-direction:row;overflow-x:auto;flex-wrap:nowrap;padding:8px;border-radius:12px}.toc b{display:none}.toc a{white-space:nowrap;border-left:0}.toc a.on{border-left:0;box-shadow:inset 0 -2px 0 var(--blue)}
 .wrap{padding:12px 12px 32px}.hero{padding:20px 18px;border-radius:18px}.hero h1{font-size:28px;line-height:34px}.thero h1{font-size:26px;line-height:32px}.card{padding:14px 14px}.brand small{display:none}.deck p{font-size:16px;line-height:27px}}
+/* ---- polish v3 ---- */
+::selection{background:color-mix(in oklab,var(--amber2) 45%,transparent)}
+.hero{padding:40px 36px 30px}
+.hero h1{font-size:46px;line-height:52px;letter-spacing:-.025em;background:linear-gradient(120deg,var(--ink) 30%,var(--blue) 70%,var(--amber) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.thero h1{font-size:34px;line-height:40px}
+.hero p{font-size:17px;line-height:28px;color:color-mix(in oklab,var(--ink) 75%,var(--muted))}
+.herocta{margin-top:16px;gap:10px}.btn.big{font-size:15px;padding:11px 18px;border-radius:12px}
+.btn.primary{box-shadow:0 10px 22px -12px var(--blue)}.btn.primary:hover{filter:brightness(1.08);box-shadow:0 14px 28px -12px var(--blue)}
+.btn:active{transform:translateY(0) scale(.98)}
+.feats{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.feats span{font:600 13px/18px Inter,system-ui;padding:6px 12px;border-radius:999px;background:color-mix(in oklab,var(--card-solid) 80%,transparent);border:1px solid var(--line);transition:.2s}
+.feats span:hover{border-color:var(--amber);transform:translateY(-2px)}
+.stat{transition:.2s}.stat:hover{border-color:var(--blue);transform:translateY(-2px)}
+.stat b{font-size:24px;line-height:28px;font-family:Inter,system-ui}
+.card{transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:color-mix(in oklab,var(--blue) 25%,var(--line))}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.wrap>*,main>.card,.course{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+main>.card:nth-child(2){animation-delay:.04s}main>.card:nth-child(3){animation-delay:.08s}main>.card:nth-child(4){animation-delay:.12s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.topic{position:relative}.topic::after{content:"→";margin-left:auto;opacity:0;transform:translateX(-6px);transition:.2s;color:var(--blue)}.topic:hover::after{opacity:1;transform:none}
+/* ders şablonları */
+.ph{display:grid;gap:10px;margin:6px 0 10px}
+.phc{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;border:1px dashed color-mix(in oklab,var(--blue) 40%,transparent);background:var(--card-solid);font-family:Inter,system-ui;transition:.2s}
+.phc:hover{transform:translateY(-2px);border-style:solid}
+.phc .ic{font-size:24px;width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:color-mix(in oklab,var(--green) 16%,transparent)}
+.phc.tr .ic{background:color-mix(in oklab,var(--amber) 18%,transparent)}
+.phc div{flex:1;display:flex;flex-direction:column}.phc b{font-size:15px}
+/* boş durum */
+.empty{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:26px 16px;border-radius:14px;border:1px dashed var(--line);background:repeating-linear-gradient(135deg,transparent 0 14px,color-mix(in oklab,var(--blue) 4%,transparent) 14px 28px);color:var(--muted)}
+.empty span{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:700 20px Inter,system-ui;color:var(--blue);background:color-mix(in oklab,var(--blue) 12%,transparent)}
+.empty p{margin:0;font-family:Inter,system-ui;font-size:14px}
+/* okuma rahatı */
+#lesson,#goalText,#ooc,#official{font-size:17.5px;line-height:30px;max-width:68ch}
+#lesson p+p{margin-top:12px}
+main .card{padding:24px 26px}
+.readbar{position:fixed;left:0;top:0;height:3px;width:0;z-index:50;background:linear-gradient(90deg,var(--blue),var(--amber2));box-shadow:0 0 10px var(--amber2);transition:width .1s}
+/* footer */
+.sitefoot{margin-top:40px;border-top:1px solid var(--line);background:color-mix(in oklab,var(--card-solid) 60%,transparent);backdrop-filter:blur(8px)}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding-top:28px;padding-bottom:28px}
+.fgrid b{display:block;font:700 11px/16px Inter,system-ui;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.fgrid a:not(.brand),.fgrid .soonlink{display:block;font:600 14px/26px Inter,system-ui;color:var(--ink);text-decoration:none}
+.fgrid a:not(.brand):hover{color:var(--blue)}.fgrid .soonlink{color:var(--muted)}
+.totop{margin-top:8px}
+@media (max-width:880px){
+ .hero{padding:24px 18px}.hero h1{font-size:32px;line-height:38px}.thero h1{font-size:26px;line-height:32px}
+ .toc{top:52px;margin:0 -12px;border-radius:0;border-left:0;border-right:0;padding:6px 10px;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-mask:linear-gradient(90deg,transparent,#000 16px,#000 calc(100% - 24px),transparent)}
+ .toc::-webkit-scrollbar{display:none}.toc a{scroll-snap-align:start;padding:7px 12px;border-radius:999px}
+ .toc a.on{box-shadow:none;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff}
+ main .card{padding:18px 16px}#lesson,#goalText,#ooc{font-size:17px;line-height:29px}
+ .fgrid{grid-template-columns:1fr 1fr}.fgrid>div:first-child{grid-column:1/-1}
+}
+.btn{font-family:Inter,system-ui,sans-serif}#courses>.card{margin-bottom:16px}.ph{grid-template-columns:1fr 1fr}@media (max-width:600px){.ph{grid-template-columns:1fr}}

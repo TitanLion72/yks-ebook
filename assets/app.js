@@ -22,11 +22,15 @@
         c.units.forEach(function(u){var ts=u.topics.filter(function(t){return !s||(t.title+' '+(t.keywords||[]).join(' ')).toLocaleLowerCase('tr-TR').indexOf(s)>=0;});if(!ts.length)return;any=true;
           card.appendChild(el('div','unit',u.title));
           ts.forEach(function(t){var p=getP(t.id),v=pct(p);var r=el('a','topic'+(t.pilot?' pilot':''));r.href=base+t.href;r.appendChild(el('span',null,t.title));if(t.pilot)r.appendChild(el('span','chip amber','Pilot'));var pr=el('span','prog');var i=el('i');i.style.width=v+'%';pr.appendChild(i);r.appendChild(pr);r.appendChild(el('span','small',p.done?'tamam':p.read?'okundu':'başlanmadı'));card.appendChild(r);});});
-        if(!any)card.appendChild(el('p','small','Eşleşen konu yok.'));list.appendChild(card);});}
+        if(!any){var em=el('div','empty');em.appendChild(el('span',null,'?'));em.appendChild(el('p',null,'“'+q.value+'” için eşleşen konu yok. Başka bir kelime dene.'));card.appendChild(em);}list.appendChild(card);});}
     if(q)q.oninput=render;render();
     var cs=document.getElementById('soon');if(cs)ix.comingSoon.forEach(function(n){cs.appendChild(el('li',null,n));});
   });}
 
+  // okuma çubuğu
+  var rb=document.getElementById('readbar');if(rb){var upd=function(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;rb.style.width=(m>0?h.scrollTop/m*100:0)+'%';};addEventListener('scroll',upd,{passive:true});upd();}
+  // şablon sayfası TOC vurgusu (veri yok)
+  if(!document.body.getAttribute('data-topic')){var tl=[].slice.call(document.querySelectorAll('.toc a'));if(tl.length&&'IntersectionObserver' in window){var io0=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)tl.forEach(function(a){var on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('on',on);if(on&&a.scrollIntoView&&innerWidth<=880)a.parentNode.scrollTo({left:a.offsetLeft-20,behavior:'smooth'});});});},{rootMargin:'-20% 0px -70% 0px'});tl.forEach(function(a){var t=document.getElementById(a.getAttribute('href').slice(1));if(t)io0.observe(t);});}}
   // KONU SAYFASI
   var tp=document.body.getAttribute('data-topic');
   if(!tp)return;
@@ -69,6 +73,6 @@
 
     // TOC vurgusu
     var links=[].slice.call(document.querySelectorAll('.toc a'));
-    if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});});},{rootMargin:'-20% 0px -70% 0px'});links.forEach(function(a){var t=document.getElementById(a.getAttribute('href').slice(1));if(t)io.observe(t);});}
+    if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){var on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('on',on);if(on&&innerWidth<=880)a.parentNode.scrollTo({left:a.offsetLeft-20,behavior:'smooth'});});});},{rootMargin:'-20% 0px -70% 0px'});links.forEach(function(a){var t=document.getElementById(a.getAttribute('href').slice(1));if(t)io.observe(t);});}
   });
 })();
