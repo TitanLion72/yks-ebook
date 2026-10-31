@@ -1,0 +1,34 @@
+{
+  "courses": [
+    {
+      "id": "tyt-matematik",
+      "title": "TYT Matematik",
+      "href": "ders/tyt-matematik/",
+      "units": [
+        {
+          "title": "Problemler",
+          "topics": [
+            {
+              "id": "tyt-mat-isci-problemleri",
+              "title": "İşçi problemleri",
+              "href": "ders/tyt-matematik/problemler/isci-problemleri/",
+              "pilot": true,
+              "keywords": [
+                "işçi",
+                "iş",
+                "havuz",
+                "ters orantı",
+                "birlikte çalışma"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "comingSoon": [
+    "TYT Türkçe",
+    "TYT Fen",
+    "AYT Matematik"
+  ]
+}

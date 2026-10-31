@@ -1,0 +1,21 @@
+{
+  "id": "tyt-mat-isci-problemleri",
+  "ders": "TYT Matematik",
+  "unite": "Problemler",
+  "konu": "İşçi problemleri",
+  "sureDk": 50,
+  "hedefler": [
+    "Birim iş (1/x) kavramını kullanmak",
+    "Birlikte çalışma formülünü uygulamak",
+    "Ters orantı / EKOK ile hız-süre bağını kurmak",
+    "Giren-çıkan işçi ve havuz benzeri soruları parçalamak"
+  ],
+  "ilgili": ["Oran-orantı", "Havuz problemleri", "Hız problemleri", "Yaş problemleri"],
+  "videoSenaryo": [
+    "İş = 1 kabulü",
+    "A ve B günlük paylar",
+    "Birlikte toplama 1/x+1/y=1/t",
+    "Ters orantı tablosu",
+    "1 örnek soru"
+  ]
+}
