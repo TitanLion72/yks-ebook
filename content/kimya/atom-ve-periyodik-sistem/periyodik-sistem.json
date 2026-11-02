@@ -1,0 +1,193 @@
+{
+  "id": "kimya-periyodik-sistem",
+  "ders": "Kimya (TYT + AYT)",
+  "unite": "Atom ve Periyodik Sistem (9) + Modern Atom Teorisi (11)",
+  "konu": "Periyodik sistem ve periyodik özellikler",
+  "sureDk": 90,
+  "kapsam": {
+    "TYT": "9. sınıf 9.2.3.1–9.2.3.3 (2018); Maarif 2024: KİM.9.1.6–9.1.8",
+    "AYT": "11. sınıf 11.1.2.1, 11.1.3.1, 11.1.4.1 (2018)"
+  },
+  "hedefler": [
+    "Tarihçede Döbereiner, Newlands, Mendeleyev, Meyer ve Moseley'in katkılarını ayırt etmek",
+    "Grup, periyot ve blok kavramlarını; grup adlarını bilmek",
+    "Katman ve orbital diziliminden yer bulmak (A ve B grupları, Cr/Cu istisnaları)",
+    "Metal, ametal, yarı metal ve soy gazları sınıflandırmak",
+    "Atom ve iyon yarıçapını (izoelektronik dahil) karşılaştırmak",
+    "İE eğilimini, 2A/3A ve 5A/6A istisnalarını, ardışık İE ile grup bulmayı uygulamak",
+    "Elektron ilgisini elektronegatiflikten ayırmak",
+    "Metalik/ametalik aktifliği ve oksitlerin asit-baz karakterini yorumlamak"
+  ],
+  "ilgili": [
+    "Atomun yapısı",
+    "Modern atom teorisi ve elektron dizilimi",
+    "Kimyasal türler arası etkileşimler",
+    "Asitler, bazlar ve tuzlar",
+    "Yükseltgenme basamakları"
+  ],
+  "slaytlar": [
+    {
+      "title": "1 · Periyodik sistemin doğuşu",
+      "body": "Döbereiner üçlüleri → Newlands oktavları → Mendeleyev (1869, atom kütlesi, boşluklar ve tahminler: Ga, Ge) ve Meyer (fiziksel özellikler) → Moseley (1913, atom numarası). Modern tablo artan atom numarasına göre düzenlenir."
+    },
+    {
+      "title": "2 · Grup, periyot, blok",
+      "body": "7 periyot (katman sayısı), 18 grup (8A + 10B). Bloklar: s (1A, 2A, He), p (3A–8A), d (geçiş metalleri), f (lantanit, aktinit). Grup adları: alkali, toprak alkali, toprak metalleri, halojen, soy gaz."
+    },
+    {
+      "title": "3 · Yer bulma",
+      "body": "Katman dağılımında katman sayısı periyodu, son katmandaki elektron sayısı A grubunu verir. Orbital diziliminde en büyük n periyodu verir. s/p ile bitiyorsa A grubudur; d ile bitiyorsa ns + (n−1)d toplamı B grubunu verir. Cr ve Cu istisnadır."
+    },
+    {
+      "title": "4 · Yarıçaplar",
+      "body": "Grupta aşağı doğru artar, periyotta sağa doğru azalır. Katyon kendi atomundan küçük, anyon kendi atomundan büyüktür. İzoelektronik taneciklerde proton sayısı arttıkça yarıçap küçülür: N³⁻ > O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺."
+    },
+    {
+      "title": "5 · İyonlaşma enerjisi",
+      "body": "Periyotta sağa doğru artar, grupta aşağı doğru azalır. İstisnalar: 2A > 3A, 5A > 6A. Ardışık İE'de büyük sıçramadan önceki İE sayısı A grup numarasını verir."
+    },
+    {
+      "title": "6 · Elektron ilgisi ve elektronegatiflik",
+      "body": "Elektron ilgisinde en büyük değer Cl'dedir, çok istisna vardır. Elektronegatiflikte en büyük değer F'dedir; periyotta sağa doğru artar, grupta yukarı doğru artar. EN farkı bağ türünü belirler."
+    },
+    {
+      "title": "7 · Aktiflik ve oksitler",
+      "body": "Metalik aktiflik sola ve aşağı doğru, ametalik aktiflik sağa ve yukarı doğru artar. Metal oksitleri bazik, ametal oksitleri asidiktir. Al₂O₃ ve ZnO amfoter; CO, NO ve N₂O nötrdür."
+    }
+  ],
+  "sorular": [
+    {
+      "q": "₁₂X, ₁₇Y, ₁₉Z için hangisi yanlıştır? A) X 3. periyot 2A B) Y halojen C) Z'nin yarıçapı en büyük D) XY₂ oluşur E) İE(Y) < İE(Z)",
+      "steps": [
+        "X: 2-8-2 → 3. periyot 2A; Y: 2-8-7 → 7A; Z: 2-8-8-1 → 4. periyot 1A",
+        "Z 4 katmanlı, en büyük → C doğru",
+        "X²⁺ ve Y⁻ → XY₂ → D doğru",
+        "Ametalin İE'si alkaliden büyük: İE(Y) > İE(Z) → E yanlış"
+      ],
+      "ans": "E",
+      "seviye": "TYT"
+    },
+    {
+      "q": "Mendeleyev ve Moseley için: I. Mendeleyev atom kütlesine göre dizdi. II. Bulunmamış elementlerin özelliklerini tahmin etti. III. Moseley atom numarasına göre düzenlemeyi sağladı.",
+      "steps": [
+        "Mendeleyev atom kütlesi + benzerlik → I doğru",
+        "Ga, Ge tahminleri → II doğru",
+        "Moseley X ışını → atom numarası → III doğru"
+      ],
+      "ans": "I, II ve III",
+      "seviye": "TYT"
+    },
+    {
+      "q": "N, O, F'nin birinci İE sıralaması?",
+      "steps": [
+        "Hepsi 2. periyot; genel eğilimle F en büyük",
+        "N 2p³ yarı dolu (küresel simetrik), O 2p⁴ → N > O istisnası"
+      ],
+      "ans": "F > N > O",
+      "seviye": "TYT/AYT"
+    },
+    {
+      "q": "3. periyottaki X'in ardışık İE'leri (kJ/mol): 578, 1817, 2745, 11577. X nedir?",
+      "steps": [
+        "Oranlar: 3,1; 1,5; 4,2",
+        "En büyük sıçrama İE₃→İE₄ → 3 değerlik elektronu → 3A",
+        "3. periyot 3A = Al; oksiti Al₂O₃ amfoter"
+      ],
+      "ans": "Al (3A)",
+      "seviye": "AYT"
+    },
+    {
+      "q": "S²⁻, Cl⁻, K⁺, Ca²⁺ yarıçap sıralaması?",
+      "steps": [
+        "Hepsi 18 elektron, izoelektronik",
+        "Proton sayısı arttıkça yarıçap küçülür: 16 < 17 < 19 < 20"
+      ],
+      "ans": "S²⁻ > Cl⁻ > K⁺ > Ca²⁺",
+      "seviye": "AYT"
+    },
+    {
+      "q": "₂₄Cr ve ₂₉Cu için: I. İkisi de 4. periyot. II. Cr 6B, Cu 1B. III. Cu⁺ = [Ar] 3d¹⁰",
+      "steps": [
+        "Cr: [Ar] 4s¹ 3d⁵ → 1+5=6 → 6B",
+        "Cu: [Ar] 4s¹ 3d¹⁰ → 1+10=11 → 1B",
+        "Cu⁺: elektron 4s'den kopar → [Ar] 3d¹⁰"
+      ],
+      "ans": "I, II ve III",
+      "seviye": "AYT"
+    },
+    {
+      "q": "Na₂O, Al₂O₃, SO₃, CO oksitlerini sınıflandır.",
+      "steps": [
+        "Na₂O + H₂O → NaOH: bazik",
+        "Al₂O₃ hem asit hem bazla tepkimeye girer: amfoter",
+        "SO₃ + H₂O → H₂SO₄: asidik",
+        "CO tepkimeye girmez: nötr"
+      ],
+      "ans": "Bazik, amfoter, asidik, nötr",
+      "seviye": "AYT"
+    },
+    {
+      "q": "Aynı periyotta 1A grubundaki X ve 7A grubundaki Y için hangisi yanlıştır? A) r: X > Y B) EN: Y > X C) X metal, Y ametal D) İE: X > Y E) İyonik XY oluşur",
+      "steps": [
+        "Periyotta sağa doğru yarıçap azalır, EN ve İE artar",
+        "Bu yüzden İE(Y) > İE(X) → D yanlış"
+      ],
+      "ans": "D",
+      "seviye": "TYT"
+    }
+  ],
+  "mufredatDisi": [
+    {
+      "metin": "Slater kuralları ile etkin çekirdek yükü hesabı",
+      "ihtimal": "Çok düşük"
+    },
+    {
+      "metin": "Lantanit büzülmesi",
+      "ihtimal": "Çok düşük"
+    },
+    {
+      "metin": "Elektronegatiflik ölçekleri (Mulliken vb.) ve ölçüm yöntemleri",
+      "ihtimal": "Çok düşük (programda 'ölçüme girilmez' yazar)"
+    },
+    {
+      "metin": "Diyagonal benzerlik (Li–Mg, Be–Al, B–Si)",
+      "ihtimal": "Düşük"
+    },
+    {
+      "metin": "Erime-kaynama noktasının periyodik eğilimi (1A'da azalır, 7A ve 8A'da artar)",
+      "ihtimal": "Düşük–orta (etkileşimler konusu üzerinden)"
+    },
+    {
+      "metin": "Z > 36 olan elementlerin dizilimleri ve 4d/5d istisnaları",
+      "ihtimal": "Çok düşük"
+    },
+    {
+      "metin": "Peroksit/süperoksit, anhidrit adlandırması",
+      "ihtimal": "Düşük"
+    },
+    {
+      "metin": "İE ve Eİ'nin sayısal değerlerini ezberlemek",
+      "ihtimal": "Düşük (sıralama sorulur)"
+    },
+    {
+      "metin": "Nh, Mc, Ts, Og adları",
+      "ihtimal": "Düşük"
+    }
+  ],
+  "gorseller": [
+    "img/blok-haritasi.png",
+    "img/periyodik-ozellik-egilimleri.png",
+    "img/ardisik-iyonlasma-enerjisi.png",
+    "img/izoelektronik-yaricap.png"
+  ],
+  "videoSenaryo": [
+    "Tarihçe zaman çizelgesi (Döbereiner'den Moseley'e)",
+    "Blok haritası üzerinde grup adları",
+    "Dizilimden yer bulma: Na, Br, Fe, Cr",
+    "Eğilim okları: yarıçap ve İE",
+    "İstisnalar: Be > B, N > O; izoelektronik sıralama",
+    "Ardışık İE grafiği: Mg ve Al",
+    "Eİ ve EN farkı, oksitler; 1 örnek soru"
+  ],
+  "officialNotes": []
+}

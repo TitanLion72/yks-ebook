@@ -24,6 +24,35 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kimya",
+      "title": "Kimya",
+      "href": "ders/kimya/",
+      "units": [
+        {
+          "title": "Atom ve Periyodik Sistem",
+          "topics": [
+            {
+              "id": "kimya-periyodik-sistem",
+              "title": "Periyodik sistem ve periyodik özellikler",
+              "href": "ders/kimya/atom-ve-periyodik-sistem/periyodik-sistem/",
+              "keywords": [
+                "periyodik",
+                "tablo",
+                "grup",
+                "periyot",
+                "blok",
+                "iyonlaşma",
+                "yarıçap",
+                "elektronegatiflik",
+                "elektron ilgisi",
+                "kimya"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "comingSoon": [
